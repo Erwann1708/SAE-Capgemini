@@ -1,5 +1,10 @@
+* {
+    margin: 0;
+}
+
 body{
     height:500vh;   /*barre de scroll */
+
 }
 
 .menu{
@@ -49,6 +54,7 @@ body{
 
 .has-sousmenu:hover .sous-menu{
     display:block;
+
 }
 
 

@@ -4,6 +4,7 @@
 
 body{
     height:500vh;   /*barre de scroll */
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -11,8 +12,16 @@ body{
     position: sticky; /*colle le menu a la page web directement en l'integrant et peut importe ou l'on scroll cela va suivre*/
     top:0;
     left:0;
-    background-color:rgb(39, 39, 39);
+    background-color:rgb(75, 92, 107);
+    display : flex;
+    padding : 0 20px;
+    align-items: center;
 }
+
+.logo{ 
+    width: 20px;;
+    height: auto;
+} 
 
 .menu > ul{
     display: flex;
@@ -41,13 +50,12 @@ body{
     position : absolute;
     top : 58px;
     left : 0;
-    width : max-content;
-    background-color: rgb(39, 39, 39);
+    background-color: rgb(75, 92, 107);
+
 }
 
-.sous-menu li a:hover{
-    background-color: grey;
-}
+
+
 .menu li a:hover {
     background-color: grey;
 }
@@ -56,5 +64,4 @@ body{
     display:block;
 
 }
-
 

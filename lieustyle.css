@@ -1,1 +1,58 @@
  
+.menu{
+    position: sticky; /*colle le menu a la page web directement en l'integrant et peut importe ou l'on scroll cela va suivre*/
+    top:0;
+    left:0;
+    background-color:rgb(75, 92, 107);
+    display : flex;
+    padding : 0 20px;
+    align-items: center;
+}
+
+.logo{ 
+    width: 20px;;
+    height: auto;
+} 
+
+.menu > ul{
+    display: flex;
+    list-style: none; /* retire les puces */
+}
+
+.menu li{
+    align-items: center;
+}
+
+.menu li a{
+    text-decoration: none; /* retire le souligner du texte */
+    color : white;
+    display : block;
+    padding : 20px 10px;
+
+}
+
+.has-sousmenu{
+    position : relative;
+}
+
+.sous-menu{
+    list-style : none;
+    display:none;
+    position : absolute;
+    top : 100%;  /* place le sous menu juste en dessous */
+    left : 0;
+    background-color: rgb(75, 92, 107);
+    padding-left: 0;
+
+}
+
+
+
+.menu li a:hover {
+    background-color: grey;
+}
+
+.has-sousmenu:hover .sous-menu{
+    display:block;
+
+}

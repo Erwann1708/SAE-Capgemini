@@ -48,9 +48,10 @@ body{
     list-style : none;
     display:none;
     position : absolute;
-    top : 58px;
+    top : 100%;  /* place le sous menu juste en dessous */
     left : 0;
     background-color: rgb(75, 92, 107);
+    padding-left: 0;
 
 }
 

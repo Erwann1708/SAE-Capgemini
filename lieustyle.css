@@ -46,8 +46,6 @@
 
 }
 
-
-
 .menu li a:hover {
     background-color: grey;
 }
@@ -55,4 +53,27 @@
 .has-sousmenu:hover .sous-menu{
     display:block;
 
+}
+
+.agence  {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.nomville {
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    justify-content: center;
+}
+
+section p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.agence > img {
+    justify-content: center;
+    height: 600px;
+    width: 100%;
 }

@@ -99,7 +99,7 @@ section p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.agence > img {
+.agence > img { /* tout ça ne marche pas il faut le changer en modifiant les classes et les ertticles et section dans le html */ 
     justify-content: center;
     height: 600px;
     width: 100%;

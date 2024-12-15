@@ -79,11 +79,11 @@ footer {
 }
 /* fin code menu*/
 
-.agence  {
+.box-titre  {
     display: flex;
     flex-direction: column;
-    padding-bottom: 60px ;
-    border-bottom: 7px solid black;
+    padding-bottom: 62spx ;
+    border-bottom: 5px solid black;
 }
 
 .nomville {

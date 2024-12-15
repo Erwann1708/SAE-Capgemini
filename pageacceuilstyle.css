@@ -18,7 +18,7 @@ body{
     display : flex;
     padding : 0 20px;
     align-items: center;
-    height : 45px; /* taille fixe de la barre du menu */
+    height : 60px; /* taille fixe de la barre du menu */
 }
 
     /*Logo*/

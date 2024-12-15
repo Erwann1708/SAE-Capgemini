@@ -1,21 +1,29 @@
 * {
     margin: 0;
+
 }
 
 body{
     height:500vh;   /*barre de scroll */
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+footer { /*Code footer*/
+    display: flex;
+    align-items: end;
+    margin: 10px;
+    padding-top: 20px;
 }
 
 .menu{
     position: sticky; /*colle le menu a la page web directement en l'integrant et peut importe ou l'on scroll cela va suivre*/
     top:0;
     left:0;
-    background-color:rgb(75, 92, 107);
+    background-color:#99CCFF;
     display : flex;
     padding : 0 20px;
     align-items: center;
+    width: 100%;
 }
 
 .logo{ 
@@ -44,6 +52,11 @@ body{
     position : relative;
 }
 
+.rs {
+    display: flex;
+    justify-content: right;
+}
+
 .sous-menu{
     list-style : none;
     display:none;
@@ -55,8 +68,6 @@ body{
 
 }
 
-
-
 .menu li a:hover {
     background-color: grey;
 }
@@ -65,4 +76,36 @@ body{
     display:block;
 
 }
+/* fin code menu*/
 
+
+.titre {
+    background-image: url(photo-acceuil.png);
+    padding-bottom: 950px;
+}
+
+.titre h1 {
+    font-size: 120px;
+    padding-top: 200px;
+    padding-left: 150px;
+    font-weight: bold;
+}
+
+.titre p {
+    padding-left: 160px;
+    font-size: 40px;
+}
+
+.box-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.infos {
+    padding: 25px;
+}
+
+.button {
+    justify-content: end;
+    padding: 25px;
+}

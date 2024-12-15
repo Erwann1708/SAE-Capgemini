@@ -3,17 +3,12 @@
 
 }
 
+        /*Debut du code Du Menu */
 body{
     height:500vh;   /*barre de scroll */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-footer { /*Code footer*/
-    display: flex;
-    align-items: end;
-    margin: 10px;
-    padding-top: 20px;
-}
 
 .menu{
     position: sticky; /*colle le menu a la page web directement en l'integrant et peut importe ou l'on scroll cela va suivre*/
@@ -23,13 +18,34 @@ footer { /*Code footer*/
     display : flex;
     padding : 0 20px;
     align-items: center;
-    width: 100%;
+    height : 45px; /* taille fixe de la barre du menu */
 }
 
-.logo{ 
-    width: 20px;;
+    /*Logo*/
+/* Logo  Instagram , Twitter et Youtube */
+
+.logo-container{         /* Container flex pour les logo*/
+    display: flex;
+    margin-left: auto;  /*container des logo tout a droite*/
+}
+
+.logo{  
+    width: 25px;;
     height: auto;
 } 
+
+/* Logo Capgemini */
+.container-logocapgemini{
+    display: flex;
+}
+
+.logo_capgemini{
+    width: 25px;;
+    height: auto;
+
+}
+
+/*Fin logo*/
 
 .menu > ul{
     display: flex;
@@ -45,17 +61,19 @@ footer { /*Code footer*/
     color : white;
     display : block;
     padding : 20px 10px;
-
 }
 
 .has-sousmenu{
     position : relative;
 }
 
-.rs {
-    display: flex;
-    justify-content: right;
+.container-menu{  /* container du menu */
+    display :flex;
+    margin-left: auto; /* met le menu au milieu */
+    gap : 30px;
 }
+
+
 
 .sous-menu{
     list-style : none;
@@ -76,7 +94,8 @@ footer { /*Code footer*/
     display:block;
 
 }
-/* fin code menu*/
+
+        /* fin code menu*/
 
 
 .titre {
@@ -108,4 +127,12 @@ footer { /*Code footer*/
 .button {
     justify-content: end;
     padding: 25px;
+}
+
+/*Code footer*/
+footer { 
+    display: flex;
+    align-items: end;
+    margin: 10px;
+    padding-top: 20px;
 }

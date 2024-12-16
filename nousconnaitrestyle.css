@@ -72,5 +72,41 @@ footer {
 /* fin code menu*/
 
 
-
 /* css à compléter selon les classes présentes dans le fichier html lié */
+
+#titre {
+    display: flex;
+    flex-direction: rows;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    padding-bottom: 50px;
+}
+
+.titre-encadre-gauche {
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 120px;
+}
+
+.titre-encadre-droite {
+    font-size: 25px;
+    display: flex;
+    justify-content: end;
+    padding-right: 120px;
+}
+
+.texte-encadre-droite {
+    display: flex;
+    justify-content: end;
+}
+
+.p {
+    width: 40%;
+}

@@ -58,8 +58,8 @@
 
         </nav>
 
-        <section class="box-form">
             <form action="traitement.php" method="post">
+              <section class="box-form">
                 <article class="formulaire">
                     <div>
                         <label for="nom">Nom :</label>
@@ -79,22 +79,21 @@
                     </div>
                 </article>
                 <article id="cv">
-                  <input type="file" name="parcourir-cv" id="parcourir-cv" placeholder="Déposer votre CV">
+                  <input type="file" name="parcourir-cv" id="parcourir-cv" placeholder="Déposer votre CV" required>
                   <label for="parcourir-cv">Déposer votre CV</label>
                 </article>
                 <article id="lettre-motiv">
-                  <input type="file" name="parcourir-lettre" id="parcourir-lettre" placeholder=">Déposer votre Lettre de Motivation">
+                  <input type="file" name="parcourir-lettre" id="parcourir-lettre" placeholder=">Déposer votre Lettre de Motivation" required>
                   <label for="parcourir-lettre">Déposer votre Lettre de Motivation</label>
                 </article>
-            </form>
-            <br>
-        </section>
-        
-        <section>
-          <form action="traitement.php" method="post">
-            <input type="submit" value="ENVOYER" />
+              </section>
+              <br>
+              <section id="envoyer">
+                <form action="traitement.php" method="post">
+                  <input type="submit" value="ENVOYER" />
+                </form>
+                <img src="" alt="squellette pouce blo" id="img-petite">
+              </section>
           </form>
-          <img src="" alt="squellette pouce blo" id="img-petite">
-        </section>
 
     </body>

@@ -131,15 +131,23 @@ body{
 .box-info {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .infos {
     padding: 25px;
+    width: 60%;
+    font-size: 20px;
+    padding-right: 300px;
 }
 
 .button {
     justify-content: end;
     padding: 25px;
+    border: 2px solid blueviolet;
+    background-color: blueviolet;
+    border-radius: 20px 20px 20px 20px;
+    height: 30%;
 }
 
 /*Code footer*/

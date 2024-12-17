@@ -1,14 +1,22 @@
 * {
     margin: 0;
-
 }
-/* TOUT LE FLEX EST A REFAIRE AU NIVEAU DES MAPS MAIS IL FAUT CHANGER LE HTML JAI LA FLEMME */
+html,body{
+    height : 100%;
+    overflow : visible;
+}
         /*Debut du code Du Menu */
 body{
     height:500vh;   /*barre de scroll */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.container-menu{  /* container du menu */
+    display :flex;
+    margin-left: auto;    /* met le menu au milieu */
+    margin-right: auto;     /* met le menu au milieu */
+    gap : 30px;
+}
 
 .menu{
     position: sticky; /*colle le menu a la page web directement en l'integrant et peut importe ou l'on scroll cela va suivre*/
@@ -45,10 +53,11 @@ body{
 }
 
 .logo_capgemini{
-    width: 40px;
+    width: 35px;
     height: auto;
 
 }
+
 
 /*Fin logo*/
 
@@ -59,25 +68,26 @@ body{
 
 .menu li{
     align-items: center;
+    padding : 0;
+  
 }
 
 .menu li a{
     text-decoration: none; /* retire le souligner du texte */
     color : white;
     display : block;
-    padding : 20px 10px;
+    padding : 10px 15px;
+    margin : 0;
 }
 
 .has-sousmenu{
     position : relative;
 }
 
-.container-menu{  /* container du menu */
-    display :flex;
-    margin-left: auto;    /* met le menu au milieu */
-    margin-right: auto;     /* met le menu au milieu */
-    gap : 30px;
-}
+
+
+
+
 
 .sous-menu{
     list-style : none;
@@ -90,6 +100,9 @@ body{
     transform: translateY(-50px);                               /*plus la valeur est elever plus le sous menu va descendre de "haut" */
     opacity : 0;                                                /* le sous menu n'est pas visible de base*/
     transition: transform 0.3s ease, opacity 0.4s ease;          /* le sous  menu va mettre 0.3 s a descendre et 0.4s a avoir une opacité de 1*/
+    visibility: hidden;
+
+
 
 }
 
@@ -97,15 +110,18 @@ body{
     background-color: rgba(255, 255, 255, 0.2);
     color: #000000;
     transition: 0.3s ease, color 0.3s ease;
+
 }
 
 
 .has-sousmenu:hover .sous-menu{
     transform: translateY(0); /*le sous menu descend donc a 0*/
     opacity : 1;
+    visibility: visible;
 }
 
-/* fin code menu*/
+
+        /* fin code menu*/
 
 /*Code footer*/
 footer {

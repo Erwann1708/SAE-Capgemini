@@ -121,7 +121,12 @@ footer {
 .box-titre  {
     display: flex;
     flex-direction: column;
-    padding-bottom: 62spx ;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 62px ;
     border-bottom: 5px solid black;
 }
 
@@ -138,7 +143,7 @@ section p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.agence > img { /* tout ça ne marche pas il faut le changer en modifiant les classes et les ertticles et section dans le html */ 
+.container > img { /* tout ça ne marche pas il faut le changer en modifiant les classes et les ertticles et section dans le html */ 
     justify-content: center;
     height: 600px;
     width: 100%;

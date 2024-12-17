@@ -1,32 +1,62 @@
-/* copier coller le code final du menu depuis menustyle.css après avoir fini les marges de la page */
+* {
+    margin: 0;
+}
 
+        /*Debut du code Du Menu */
 body{
     height:500vh;   /*barre de scroll */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-footer { /*Code footer*/
-    display: flex;
-    align-items: end;
-    margin: 10px;
-    padding-top: 20px;
+.container-menu{  /* container du menu */
+    display :flex;
+    margin-left: auto;    /* met le menu au milieu */
+    margin-right: auto;     /* met le menu au milieu */
+    gap : 30px;
 }
 
 .menu{
     position: sticky; /*colle le menu a la page web directement en l'integrant et peut importe ou l'on scroll cela va suivre*/
     top:0;
     left:0;
-    background-color:#99CCFF;
+    background-color: rgb(75, 92, 107);
     display : flex;
-    padding : 0 20px;
+    padding : 0;
     align-items: center;
-    width: 100%;
+    height : 50px; /* taille fixe de la barre du menu */
 }
 
-.logo{ 
-    width: 20px;;
+    /*Logo*/
+/* Logo  Instagram , Twitter et Youtube */
+
+.logo-container{         /* Container flex pour les logo*/
+    display: flex;
+    align-items: center;
+    padding:0;
+    margin : 0;
+
+}
+
+.logo{  
+    width: 27px;
     height: auto;
 } 
+
+/* Logo Capgemini */
+
+.container-logocapgemini{
+    display: flex;
+    padding : 0;
+}
+
+.logo_capgemini{
+    width: 35px;
+    height: auto;
+
+}
+
+
+/*Fin logo*/
 
 .menu > ul{
     display: flex;
@@ -35,44 +65,58 @@ footer { /*Code footer*/
 
 .menu li{
     align-items: center;
+    padding : 0;
+  
 }
 
 .menu li a{
     text-decoration: none; /* retire le souligner du texte */
     color : white;
     display : block;
-    padding : 20px 10px;
-
+    padding : 10px 15px;
+    margin : 0;
 }
 
 .has-sousmenu{
     position : relative;
 }
 
-.rs {
-    display: flex;
-    justify-content: right;
-}
+
+
+
+
 
 .sous-menu{
     list-style : none;
-    display:none;
     position : absolute;
     top : 100%;  /* place le sous menu juste en dessous */
     left : 0;
-    background-color: rgb(75, 92, 107);
-    padding-left: 0;
+    background-color: rgb(84, 97, 107);
+    padding: 0;
+    margin : 0;
+    transform: translateY(-50px);                               /*plus la valeur est elever plus le sous menu va descendre de "haut" */
+    opacity : 0;                                                /* le sous menu n'est pas visible de base*/
+    transition: transform 0.3s ease, opacity 0.4s ease;          /* le sous  menu va mettre 0.3 s a descendre et 0.4s a avoir une opacité de 1*/
+    visibility: hidden;
 
 }
 
 .menu li a:hover {
-    background-color: grey;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #000000;
+    transition: 0.3s ease, color 0.3s ease;
+
 }
+
 
 .has-sousmenu:hover .sous-menu{
-    display:block;
-
+    transform: translateY(0); /*le sous menu descend donc a 0*/
+    opacity : 1;
+    visibility: visible;
 }
-/* fin code menu*/
+
+
+        /* fin code menu*/
+
 
 /* css à compléter selon les classes présentes dans le fichier html lié */

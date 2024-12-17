@@ -107,6 +107,14 @@ footer {
     justify-content: end;
 }
 
+img {
+    width: 40%;
+}
+
+.image-gauche {
+    justify-content: end;
+}
+
 .p {
     width: 40%;
 }

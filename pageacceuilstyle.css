@@ -92,6 +92,7 @@ body{
     transform: translateY(-50px);                               /*plus la valeur est elever plus le sous menu va descendre de "haut" */
     opacity : 0;                                                /* le sous menu n'est pas visible de base*/
     transition: transform 0.3s ease, opacity 0.4s ease;          /* le sous  menu va mettre 0.3 s a descendre et 0.4s a avoir une opacité de 1*/
+    visibility: hidden;
 
 }
 
@@ -99,6 +100,7 @@ body{
     background-color: rgba(255, 255, 255, 0.2);
     color: #000000;
     transition: 0.3s ease, color 0.3s ease;
+    visibility: visible;
 }
 
 

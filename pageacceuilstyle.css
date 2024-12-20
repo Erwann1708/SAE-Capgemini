@@ -82,10 +82,6 @@ body{
 }
 
 
-
-
-
-
 .sous-menu{
     list-style : none;
     position : absolute;
@@ -107,6 +103,7 @@ body{
     transition: 0.3s ease, color 0.3s ease;
 
 }
+
 
 
 .has-sousmenu:hover .sous-menu{
@@ -136,27 +133,68 @@ body{
     font-size: 40px;
 }
 
+
 .box-info {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 150px;
+    align-items: center;
+    justify-content: center;
 }
 
 .infos {
-    padding: 25px;
     width: 60%;
-    font-size: 20px;
-    padding-right: 300px;
+    font-size: 30px;
 }
 
+
+    /* Premier Boutton En savoir Plus qui redirige vers nous connaitre */
+
 .button {
-    justify-content: end;
-    padding: 25px;
-    border: 2px solid blueviolet;
-    background-color: blueviolet;
-    border-radius: 20px 20px 20px 20px;
-    height: 30%;
+    margin-left: 150px;
+    border : 0;
+    background: transparent;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    padding : 20px 70px;
+    border-radius: 50px;
+    cursor : pointer;
+    box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5); /* effet d'ombre initialiser a 0 */
+    transition : all 0.5s;
+    text-decoration: none;
+    color : black;
+    font-size: 15px;
 }
+
+
+
+.button::after {
+    content :"";
+    width: 400px;
+    height: 400px;
+    background-image: linear-gradient(225deg,#27d86c 0%,#26caf8 50%,#c625d0 100%); /* mise en place du fond de couleur */
+    position: absolute;
+    top: -50px;
+    left : -100px;
+    z-index: -1;    /* fait apparaitre le texte devant le fond de couleur */
+    transition : all 0.5s /* temps de transition de la rotation du degrader de couleur */
+}
+
+.button:hover::after{
+    transform : rotate(150deg); /* lorsque on passe la sourie sur le boutton le after prend la valeur du transform rotate ce qui donne un effet de rotation de couleur*/
+}
+
+.button:hover{
+    transform: translate(0,-10px);
+    box-shadow: 10px -10px 25px 0px rgba(143, 64, 248, .25), -10px 10px 25px 0px rgba(39, 200, 255, .25); /*l'ombre va changer lorsque nous passons le curseur de la souris dessus*/
+
+}
+
+    /* Fin Premier Boutton qui redirige vers nous connaitre */
+
+
 
 /*Code footer*/
 footer { 

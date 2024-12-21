@@ -198,3 +198,24 @@ body{
 
 
 /* css à compléter selon les classes présentes dans le fichier html lié */
+
+.titre1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(presentation-fonds-tikeahu-cybersecurite-vhero.webp);
+    position: relative;
+}
+
+.titre1 h1 {
+    color: white;
+    font-size: 60px;
+    padding-top: 250px;
+    padding-left: 75px;
+    font-weight: bold;
+    position: absolute;
+}
+.text-cyber {
+    font-size: 60px;
+    padding-top: 250px;
+    padding-left: 75px;
+}

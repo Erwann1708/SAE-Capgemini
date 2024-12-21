@@ -166,6 +166,7 @@ body{
 
 img {
     width: 40%;
+    border-radius: 15px;
 }
 
 .image-gauche {

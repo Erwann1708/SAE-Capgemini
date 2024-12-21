@@ -118,7 +118,7 @@ body{
 
 .titre {
     background-image: url(photo-acceuil.png);
-    padding-bottom: 950px;
+    padding-bottom: 615px;  /*950px pour avoir l'image en entier */
 }
 
 .titre h1 {
@@ -126,6 +126,7 @@ body{
     padding-top: 200px;
     padding-left: 150px;
     font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .titre p {

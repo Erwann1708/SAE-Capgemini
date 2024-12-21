@@ -122,11 +122,20 @@ body{
 
 /* css à compléter selon les classes présentes dans le fichier html lié */
 
-#titre {
+#container-titre {
     display: flex;
     flex-direction: rows;
     justify-content: center;
-    padding: 20px;
+    padding: 15px;
+}
+
+#container-titre h1 {
+    height: 80%;
+    background-image: linear-gradient(225deg,#27d86c 0%,#26caf8 50%,#c625d0 100%);
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px 20px 20px 20px;
 }
 
 .container {

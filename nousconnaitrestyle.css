@@ -1,7 +1,10 @@
 * {
     margin: 0;
 }
-
+html,body{
+    height : 100%;
+    overflow : visible;
+}
         /*Debut du code Du Menu */
 body{
     height:500vh;   /*barre de scroll */
@@ -24,6 +27,7 @@ body{
     padding : 0;
     align-items: center;
     height : 50px; /* taille fixe de la barre du menu */
+    z-index: 1000;/* ne suffit pas a regler le bug du menu */
 }
 
     /*Logo*/
@@ -98,6 +102,8 @@ body{
     opacity : 0;                                                /* le sous menu n'est pas visible de base*/
     transition: transform 0.3s ease, opacity 0.4s ease;          /* le sous  menu va mettre 0.3 s a descendre et 0.4s a avoir une opacité de 1*/
     visibility: hidden;
+
+
 
 }
 

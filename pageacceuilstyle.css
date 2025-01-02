@@ -24,10 +24,7 @@ body{
     padding : 0;
     align-items: center;
     height : 50px; /* taille fixe de la barre du menu */
-    z-index: 1;
-    
-
-
+    z-index: 3;
 }
 
     /*Logo*/
@@ -204,7 +201,7 @@ body{
     margin-top: 150px;
     display: flex;
     flex-wrap: wrap;
-    gap : 30px;
+    gap : 20px;
     justify-content: center;
     align-items: center;
 }
@@ -212,8 +209,8 @@ body{
     /* design de chaque case */
 
 .services-container article {
-    width: 900px; /* attribution d'une largent et hauteur a l'element pour ensuite mettre une image à l'interieur */
-    height: 500px;
+    width: 650px; /* attribution d'une largent et hauteur a l'element pour ensuite mettre une image à l'interieur */
+    height: 350px;
     border-radius: 40px;
     display : flex;
     flex-direction: column;

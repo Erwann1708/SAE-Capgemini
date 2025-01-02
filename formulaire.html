@@ -61,42 +61,35 @@
           </ul>
 
         </nav>
-
-            <form action="traitement.php" method="post" target="_blank">
-              <section class="box-form">
-                <article class="formulaire">
-                    <div>
-                        <label for="nom">Nom :</label>
-                        <input id="nom" type="text" name="nom" required> <br>
-                    </div>
-                    <div>
-                        <label for="nom">Prénom :</label>
-                        <input id="prenom" type="text" name="prenom" required> <br>
-                    </div>
-                    <div>
-                        <label for="email">E-mail :</label>
-                        <input id="email-adress" type="email" name="email-adress" required> <br>
-                    </div>
-                    <div>
-                        <label for="nom">Numéro de Téléphone :</label>
-                        <input id="tel" type="number" name="tel" required> <br>
-                    </div>
-                </article>
-                <article id="cv">
-                  <input type="file" name="parcourir-cv" id="parcourir-cv" placeholder="Déposer votre CV" required>
-                  <label for="parcourir-cv">Déposer votre CV</label>
-                </article>
-                <article id="lettre-motiv">
-                  <input type="file" name="parcourir-lettre" id="parcourir-lettre" placeholder=">Déposer votre Lettre de Motivation" required>
-                  <label for="parcourir-lettre">Déposer votre Lettre de Motivation</label>
-                </article>
-              </section>
-              <br>
-              <section id="envoyer">
-                <form action="traitement.php" method="post">
-                  <input type="submit" value="ENVOYER" />
-                </form>
-                <img src="" alt="squellette pouce blo" id="img-petite">
+      <article>
+        <img src="formulaire.png" alt="image formulaire">
+        <form action="#" method="post" enctype="multipart/form-data">
+          <div class="form-group">
+            <div class="form-field">
+              <label for="nom">Nom</label>
+              <input type="text" id="nom" name="nom" required>
+            </div>
+            <div class="form-field">
+              <label for="prenom">Prénom</label>
+              <input type="text" id="prenom" name="prenom" required>
+            </div>
+          </div>
+    
+          <label for="email">Adresse Mail</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="telephone">Numéro de Téléphone</label>
+          <input type="tel" id="telephone" name="telephone" required>
+    
+          <label for="cv">Joindre un CV (PDF)</label>
+          <input type="file" id="cv" name="cv" accept=".pdf" required>
+    
+          <label for="lettre">Joindre une Lettre de Motivation (PDF)</label>
+          <input type="file" id="lettre" name="lettre" accept=".pdf" required>
+    
+          <button type="submit">Envoyer</button>
+        </form>
+      </article>
               </section>
           </form>
 

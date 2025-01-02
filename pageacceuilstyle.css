@@ -24,6 +24,10 @@ body{
     padding : 0;
     align-items: center;
     height : 50px; /* taille fixe de la barre du menu */
+    z-index: 1;
+    
+
+
 }
 
     /*Logo*/
@@ -38,8 +42,7 @@ body{
 }
 
 .logo{  
-    width: 40px;
-    height: 40px;
+    width: 27px;
     height: auto;
 } 
 
@@ -95,7 +98,6 @@ body{
     opacity : 0;                                                /* le sous menu n'est pas visible de base*/
     transition: transform 0.3s ease, opacity 0.4s ease;          /* le sous  menu va mettre 0.3 s a descendre et 0.4s a avoir une opacité de 1*/
     visibility: hidden;
-
 }
 
 .menu li a:hover {
@@ -196,6 +198,71 @@ body{
     /* Fin Premier Boutton qui redirige vers nous connaitre */
 
 
+        /*Code Case Services */
+
+.services-container {
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    gap : 30px;
+    justify-content: center;
+    align-items: center;
+}
+    
+    /* design de chaque case */
+
+.services-container article {
+    width: 900px; /* attribution d'une largent et hauteur a l'element pour ensuite mettre une image à l'interieur */
+    height: 500px;
+    border-radius: 40px;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden; /* Empêche un debordement de l'image */
+    transition: transform 0.4s ease-in-out , box-shadow 0.3s ease-in-out; /* Transition pour l"ffet de zoom et de l'ombre avec un effet */
+}
+
+    /* images de fond */
+
+.item-cyber {
+    background: url('cybersécurité_page-acceuil.jpg') center/cover; /* center pour centré l'image dans l'élément et cover pour couvrir tout l'element en maintenant les proportions d'origines */
+}
+
+.item-data{
+    background: url('data_page-acceuil.jpg') center/cover;
+}
+
+.item-cloud{
+    background: url('cloud_page-acceuil.jpg') center/cover;
+}
+
+.item-dev_durable{
+    background: url('dev-durable_page-acceuil.jpg') center/cover;
+}
+
+    /* titre des services */
+.services-container h2{
+    margin-top: 20px;
+    font-size : 30px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* ombre pour que le texte sois plus visible devant l'image */
+}
+
+    /* centrages des boutons */
+
+.services-container a {
+    margin: 0 auto; /* center les boutons */
+    margin-bottom: 30px;
+    z-index: 1;
+}
+    
+
+.services-container article:hover {
+    transform: scale(1.02); /* Agrandi l'image lors du survol */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); /* ombre lors du survol */
+}
 
 /*Code footer*/
 footer { 

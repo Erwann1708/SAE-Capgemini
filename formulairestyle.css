@@ -136,12 +136,16 @@ body{
     position: relative;
     width: 100%;
     height: 100%;
+
   }
   form {
-    margin-top: 0px;
-    margin-left: 10%;
-    margin-right: 10%;
-    position: relative;
+    margin-top: -15%;
+    margin-left: 30%;
+    margin-right: 30%;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 40px;
+    
   }
   .form-container {
     background: #ffffff;
@@ -154,9 +158,11 @@ body{
   /* Groupement Nom et Prénom */
   .form-group {
     display: flex;
-    gap: 10px;
+    gap: 0px;
     margin-bottom: 10px;
+    background: #ffffff;
   }
+
   
   .form-group .form-field {
     flex: 1;
@@ -171,8 +177,9 @@ body{
     font-size: 14px;
     font-weight: bold;
     color: #555;
+    margin-left: 10px;
   }
-  
+  label 
   input[type="text"],
   input[type="email"],
   input[type="tel"],
@@ -182,13 +189,13 @@ body{
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 14px;
-    width: 100%;
+    width: 607.2px;
   }
   
   /* Bouton Envoyer */
   button[type="submit"] {   
-        margin-top: 20px;
-        margin-left: 43%;
+        margin-top: 75px;
+        margin-left: -63%;
         border: 0;
         background: transparent;
         text-decoration: none;
@@ -202,6 +209,7 @@ body{
         text-decoration: none;
         color: black;
         font-size: 15px;
+        position: absolute;
 
   }
   button[type="submit"]:after {

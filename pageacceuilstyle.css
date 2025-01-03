@@ -239,6 +239,7 @@ body{
 }
 
     /* titre des services */
+
 .services-container h2{
     margin-top: 20px;
     font-size : 30px;
@@ -260,6 +261,123 @@ body{
     transform: scale(1.02); /* Agrandi l'image lors du survol */
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); /* ombre lors du survol */
 }
+
+    /*Carrousel*/
+
+/*
+.splide{
+    margin-top : 150px;
+}
+
+
+.splide__slide{
+    filter:grayscale(100%);
+    opacity:0.5;
+    transition : all 0.3s ease;
+}
+
+.splide__slide.is-active{
+    width: 60%;
+    height: 300px;
+    filter : none;
+    opacity : 1;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.splide__slide:not(.is-active){
+    height : 250px;
+}*/
+
+    /* Images *//*
+.splide__slide:nth-child(1){
+    background: url('Carousel-Paris.jpg') no-repeat center/cover;
+
+}
+
+.splide__slide:nth-child(2){
+    background: url('Carousel-Grenoble.jpg') no-repeat center/cover; 
+    background-size: contain;
+}
+
+.splide__slide:nth-child(3){
+    background:url('Carrousel-Aix-en-Provence.jpg') no-repeat center/cover;
+    background-size: contain;
+}
+
+.splide__slide:nth-child(4){
+    background:url('Carrousel-Lyon.jpg') no-repeat center/cover;
+    background-size: contain;
+}
+
+.splide__slide:nth-child(5){
+    background:url('Carrousel-Bordeaux.webp') no-repeat center/cover;
+    background-size: contain;
+}
+
+.splide__slide:nth-child(6){
+    background:url('Carrousel-Toulouse.jpg') no-repeat center/cover;
+    background-size: contain;
+}
+*/
+
+
+
+.splide {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.splide__slide:nth-child(1) {
+    background-image: url('Carousel-Paris.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.splide__slide:nth-child(2) {
+    background-image: url('Carousel-Grenoble.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.splide__slide:nth-child(3) {
+    background-image: url('Carrousel-Aix-en-Provence.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.splide__slide:nth-child(4) {
+    background-image: url('Carrousel-Lyon.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.splide__slide:nth-child(5) {
+    background-image: url('Carrousel-Bordeaux.webp');
+    background-size: cover;
+    background-position: center center;
+}
+.splide__slide:nth-child(6) {
+    background-image: url('Carrousel-Toulouse.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.splide__slide.is-active {
+    height: 300px;
+    border-radius: 10%;
+    transform: scale(1.1);
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+
+.splide__slide:not(.is-active) {
+    border-radius: 10%;
+    transform: scale(0.4);
+    height: 250px;
+    opacity: 0.5;
+    transition: all 0.1s;
+}
+
+
 
 /*Code footer*/
 footer { 

@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Capgemini - Accueil </title>
         <link rel="stylesheet" type="text/css" href="pageacceuilstyle.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"> <!-- lien cdn qui permet de charger les fichiers de la bibliotheque slide -->
         <link rel="icon" type="image/png" href="logo_Capemini.png">
     </head>
 
@@ -97,9 +98,41 @@
           </article>
         </section>
 
-        <section>
-          <h1>Carroussel</h1>
+        <section class="splide">
+          <div class="splide__track">  <!-- contient tout les elements visuel du carrousel -->
+            <ul class="splide__list"> <!-- tout les elements de la liste -->
+              <li class="splide__slide"></li> <!-- Chaque slide individuel -->
+              <li class="splide__slide"></li>
+              <li class="splide__slide"></li>
+              <li class="splide__slide"></li>
+              <li class="splide__slide"></li>
+              <li class="splide__slide"></li>
+              <li class="splide__slide"></li>
+            </ul>
+          </div>
         </section>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>       <!-- lien cdn qui permet de charger les fichiers de la bibliotheque slide -->
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            var splide = new Splide('.splide',{
+              start : '1',
+              perPage : 3,
+              focus : 'center',
+              autoplay:true,
+              interval : 2000,
+            });
+            splide.mount();
+            splide.on('move', function (newIndex) {
+              var totalSlides = splide.length;
+              if (newIndex === totalSlides - 1) {
+                setTimeout(function () {
+                  splide.go(0); // Revenir à la première slide après la dernière
+                }, 1000); // Attendre 1 seconde avant de revenir au début
+              }
+            });
+          });
+        
+        </script>
 
         <section>
           <h2>Newsletter</h2>
@@ -111,6 +144,8 @@
         <p><b>© Capgemini, 2024. All rights reserved.</b></p>
         <p>Information légales</p>
       </footer>
+
+      
 
 </html>
     

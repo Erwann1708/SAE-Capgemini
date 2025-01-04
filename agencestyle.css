@@ -172,7 +172,9 @@ footer {
 
 .infos p {
     width: 80%;
-    font-size: 20px;
+    font-size: 22px;
+    border-top: 2px ridge gray;
+    border-radius: 8px;
 }
 
 .maps {
@@ -182,8 +184,9 @@ footer {
 .maps iframe{
     border-radius: 20px;
     border: none;
-    transition: 0,3s ease-in-out;
-    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+    opacity: 0.8;
+    box-shadow: 0 20px 40px black;
 }
 
 iframe:hover {

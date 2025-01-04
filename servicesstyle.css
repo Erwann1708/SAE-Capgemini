@@ -7,13 +7,8 @@ html,body{
 }
       /*Debut du code Du Menu */
 body{
-<<<<<<< HEAD
     height:auto;   /*barre de scroll */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-=======
-  height:500vh;   /*barre de scroll */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
->>>>>>> 52fd6696071a1fcb614264313633c8466358d111
 }
 
 .container-menu{  /* container du menu */
@@ -537,8 +532,6 @@ body {
     opacity: 0;
   }
 }
-<<<<<<< HEAD
-
 
 /*Code footer*/
 
@@ -612,6 +605,4 @@ footer {
 }
 
 /* fin code footer */
-=======
-}
->>>>>>> 52fd6696071a1fcb614264313633c8466358d111
+

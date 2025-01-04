@@ -5,8 +5,12 @@
         /*Debut du code Du Menu */
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url("testfond.jpg");  /*fond degradé !!!!! à enlever si ça vous plait pas !!!!!!*/
-    background-size: contain;
+    background-image: url("particle-lines-futuristic-gradient-background.jpg");
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
+    background-position: center; /* Centre l'image */
+    background-attachment: fixed; /* Fixe l'image lors du défilement */  /*fond degradé !!!!! à enlever si ça vous plait pas !!!!!!*/
+
 }
 
 .container-menu{  /* container du menu */

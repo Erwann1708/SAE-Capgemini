@@ -149,6 +149,7 @@ footer {
     height: 600px;
     width: 92%;
     border-radius: 20px;
+    box-shadow: 0 10px 10px black;
 }
 
 .nomville {
@@ -185,7 +186,7 @@ footer {
     border-radius: 20px;
     border: none;
     transition: 0.3s ease-in-out;
-    opacity: 0.8;
+    opacity: 0.7;
     box-shadow: 0 20px 40px black;
 }
 

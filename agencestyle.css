@@ -9,6 +9,8 @@ html,body{
 body{
     height:500vh;   /*barre de scroll */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("testfond.jpg");  /*fond degradé*/
+    background-size: cover;
 }
 
 .container-menu{  /* container du menu */
@@ -136,31 +138,64 @@ footer {
 
 
 .box-titre  {
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 62px ;
-    border-bottom: 5px solid black;
+.box-titre img {
+    height: 600px;
+    width: 92%;
+    border-radius: 20px;
 }
 
 .nomville {
-    display: flex;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 40px;
-    justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 10px;
 }
 
-section p {
+.container {
+    padding: 4%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 62px ;
+    justify-content: space-around;
+
+}
+
+.infos {
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.infos p {
+    width: 80%;
+    font-size: 20px;
+}
+
+.maps {
+    padding: 20px;
+}
+
+.maps iframe{
+    border-radius: 20px;
+    border: none;
+    transition: 0,3s ease-in-out;
+    opacity: 0.5;
+}
+
+iframe:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+/*section p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container > img { /* tout ça ne marche pas il faut le changer en modifiant les classes et les ertticles et section dans le html */ 
+.container > img { 
     justify-content: center;
     height: 600px;
     width: 100%;
@@ -182,4 +217,4 @@ section p {
     flex-direction: row;
     justify-content: start;
     margin: 50px;
-}
+}*/

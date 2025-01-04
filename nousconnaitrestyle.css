@@ -9,6 +9,8 @@ html,body{
 body{
     height:500vh;   /*barre de scroll */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("testfond.jpg");  /*fond degradé*/
+    background-size: cover;
 }
 
 .container-menu{  /* container du menu */
@@ -137,30 +139,44 @@ body{
 
 #container-titre h1 {
     height: 80%;
-    background-image: linear-gradient(225deg,#27d86c 0%,#26caf8 50%,#c625d0 100%);
     padding: 10px;
     padding-left: 15px;
     padding-right: 15px;
+    border: 2px solid black;
     border-radius: 20px 20px 20px 20px;
 }
 
-.container {
+.container-droite {
     display: flex;
     flex-direction: column;
     margin: 50px;
     padding-bottom: 50px;
+    align-items: end;
 }
 
-.titre-encadre-gauche {
-    font-size: 25px;
+.container-gauche {
     display: flex;
+    flex-direction: column;
+    margin: 50px;
+    padding-bottom: 50px;
+    align-items: start;
+}
+
+img {
+    width: 40%;
+    border-radius: 15px;
+}
+
+
+
+/* .titre-encadre-gauche {
+    font-size: 25px;
     justify-content: flex-start;
     padding-left: 120px;
 }
 
 .titre-encadre-droite {
     font-size: 25px;
-    display: flex;
     justify-content: end;
     padding-right: 120px;
 }
@@ -181,4 +197,4 @@ img {
 
 .p {
     width: 40%;
-}
+}/*

@@ -118,7 +118,6 @@
               start : '1',
               perPage : 3,
               focus : 'center',
-              autoplay:true,
               interval : 2000,
             });
             splide.mount();
@@ -134,8 +133,16 @@
         
         </script>
 
-        <section>
-          <h2>Newsletter</h2>
+        <section class="Newsletter-container">
+          <div class="Newsletter-image">
+            <img src="Newsletter.jpg" alt="Newsletter image">
+            <div class="Newsletter-overlay">
+              <div class="Newsletter-contain">
+                <input type="email" placeholder="Entrez votre adresse email">
+                <button class="bouton-NewsLetter">Recevoir Notre Newsletter</button>
+              </div>
+            </div>
+          </div>
         </section>
 
       </body>

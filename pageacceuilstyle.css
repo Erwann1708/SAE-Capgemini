@@ -4,7 +4,6 @@
 
         /*Debut du code Du Menu */
 body{
-    height:500vh;   /*barre de scroll */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url("testfond.jpg");  /*fond degradé !!!!! à enlever si ça vous plait pas !!!!!!*/
     background-size: contain;
@@ -201,7 +200,7 @@ body{
         /*Code Case Services */
 
 .services-container {
-    margin-top: 150px;
+    margin-top: 200px;
     display: flex;
     flex-wrap: wrap;
     gap : 20px;
@@ -267,68 +266,9 @@ body{
 
     /*Carrousel*/
 
-/*
-.splide{
-    margin-top : 150px;
-}
-
-
-.splide__slide{
-    filter:grayscale(100%);
-    opacity:0.5;
-    transition : all 0.3s ease;
-}
-
-.splide__slide.is-active{
-    width: 60%;
-    height: 300px;
-    filter : none;
-    opacity : 1;
-    transform: scale(1.1);
-    transition: all 0.3s ease;
-}
-
-.splide__slide:not(.is-active){
-    height : 250px;
-}*/
-
-    /* Images *//*
-.splide__slide:nth-child(1){
-    background: url('Carousel-Paris.jpg') no-repeat center/cover;
-
-}
-
-.splide__slide:nth-child(2){
-    background: url('Carousel-Grenoble.jpg') no-repeat center/cover; 
-    background-size: contain;
-}
-
-.splide__slide:nth-child(3){
-    background:url('Carrousel-Aix-en-Provence.jpg') no-repeat center/cover;
-    background-size: contain;
-}
-
-.splide__slide:nth-child(4){
-    background:url('Carrousel-Lyon.jpg') no-repeat center/cover;
-    background-size: contain;
-}
-
-.splide__slide:nth-child(5){
-    background:url('Carrousel-Bordeaux.webp') no-repeat center/cover;
-    background-size: contain;
-}
-
-.splide__slide:nth-child(6){
-    background:url('Carrousel-Toulouse.jpg') no-repeat center/cover;
-    background-size: contain;
-}
-*/
-
-
 
 .splide {
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 250px;
 }
 
 .splide__slide:nth-child(1) {
@@ -381,8 +321,111 @@ body{
 }
 
 
+        /*NewsLestter */
+/*
+.Newsletter-container{
+    margin-top : 200px;
+    margin-bottom : 600px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Newsletter-contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Newsletter-container img{
+    width: 650px;
+    height: 350px;
+    border-radius: 10px;
+}*/
+
+
+.Newsletter-container {
+    margin-top: 300px;
+    margin-bottom: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .Newsletter-image {
+    position: relative;
+    width: 1200px;
+    height: 700px;
+    border-radius: 10px;
+    overflow: hidden; /* Pour que le contenu respecte les bordures arrondies */
+  }
+  
+  .Newsletter-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .Newsletter-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Newsletter-contain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+ 
+  .Newsletter-contain input[type="email"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .bouton-NewsLetter{
+    width: 100%;
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    align-self: flex-end;
+  }
+  
+  .Newsletter-contain .btn-primary:hover {
+    opacity: 0.9;
+  }
+
+
+
+
+
+
+
+
 
 /*Code footer*/
+
 footer { 
     display: flex;
     align-items: end;

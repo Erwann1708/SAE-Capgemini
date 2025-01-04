@@ -190,34 +190,6 @@ footer {
 }
 
 iframe:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: 1;
 }
-
-/*section p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.container > img { 
-    justify-content: center;
-    height: 600px;
-    width: 100%;
-}
-
-.maps {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: end;
-    margin: 20px;
-    padding-right: 25px;
-}
-
-.infos {
-    display: flex;
-    flex-wrap: wrap;
-    width: 45%;
-    flex-direction: row;
-    justify-content: start;
-    margin: 50px;
-}*/

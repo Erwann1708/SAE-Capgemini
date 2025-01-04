@@ -192,13 +192,7 @@ body{
     background-color: #ffffff;
     
   }
-  label
-  input[type="nom"],
-  input[type="prenom"] {
-    border: 1px solid #ccc;
-    border-radius: 40px;
-  }
-  
+
   /* Bouton Envoyer */
   button[type="submit"] {   
         margin-top: 75px;

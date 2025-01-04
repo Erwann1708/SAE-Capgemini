@@ -9,6 +9,8 @@ html,body{
 body{
     height:500vh;   /*barre de scroll */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("testfond.jpg");  /*fond degradé*/
+    background-size: cover;
 }
 
 .container-menu{  /* container du menu */
@@ -235,3 +237,4 @@ button[type="submit"]:hover::after{
     box-shadow: 10px -10px 25px 0px rgba(143, 64, 248, .25), -10px 10px 25px 0px rgba(39, 200, 255, .25); /*l'ombre va changer lorsque nous passons le curseur de la souris dessus*/
   }
   
+ 

@@ -148,7 +148,7 @@ body{
 
 .container-droite {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 50px;
     padding-bottom: 50px;
     align-items: end;
@@ -156,7 +156,7 @@ body{
 
 .container-gauche {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 50px;
     padding-bottom: 50px;
     align-items: start;

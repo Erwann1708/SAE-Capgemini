@@ -173,7 +173,7 @@ footer {
 .infos p {
     width: 80%;
     font-size: 22px;
-    border-top: 2px ridge gray;
+    border-top: 2px ridge white;
     border-radius: 8px;
 }
 

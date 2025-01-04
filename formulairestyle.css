@@ -138,9 +138,10 @@ body{
     margin-top: -15%;
     margin-left: 30%;
     margin-right: 30%;
+    padding: 10px;
     position: absolute;
-    background-color: #ffffff;
-    border-radius: 40px;
+    background-color: #E0E0E0;
+    border-radius: 20px;
   }
   .form-container {
     background: #ffffff;
@@ -188,7 +189,14 @@ body{
     border-radius: 40px;
     font-size: 14px;
     width: 607.2px;
+    background-color: #ffffff;
     
+  }
+  label
+  input[type="nom"],
+  input[type="prenom"] {
+    border: 1px solid #ccc;
+    border-radius: 40px;
   }
   
   /* Bouton Envoyer */
@@ -206,7 +214,7 @@ body{
         box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5);
         transition: all 0.5s;
         text-decoration: none;
-        color: black;
+        color: white;
         font-size: 15px;
         position: absolute;
 
@@ -215,7 +223,7 @@ body{
     content :"";
     width: 400px;
     height: 400px;
-    background-image: linear-gradient(225deg,#27d86c 0%,#26caf8 50%,#c625d0 100%); /* mise en place du fond de couleur */
+    background-color: #9932CC;
     position: absolute;
     top: -50px;
     left : -100px;

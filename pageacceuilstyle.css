@@ -122,7 +122,9 @@ body{
 
 
 .titre {
-    background-image: url(photo-acceuil.png);
+    background-image: url(photo-acceuil.png) ;
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
     padding-bottom: 950px;
 }
         

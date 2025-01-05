@@ -146,7 +146,7 @@ body{
 }
 
 .box-titre img:hover {
-    transform: scale(1.02);            /*effet de zoom image*/
+    transform: scale(1.01);            /*effet de zoom image*/
     box-shadow: 1px 1px 4px #404040;
 }
 
@@ -206,7 +206,7 @@ body{
 }
 
 iframe:hover {
-    transform: scale(1.08);
+    transform: scale(1.09);
     opacity: 1;
 }
 

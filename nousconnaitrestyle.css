@@ -62,7 +62,6 @@ body{
 .logo_capgemini{
     width: 35px;
     height: auto;
-
 }
 
 
@@ -136,9 +135,9 @@ body{
 
 #container-titre {
     display: flex;
-    flex-direction: rows;
     justify-content: center;
     padding: 15px;
+    padding-bottom: 45px;
 }
 
 #container-titre h1 {
@@ -148,30 +147,67 @@ body{
     padding-right: 15px;
     border: 2px solid black;
     border-radius: 20px 20px 20px 20px;
+    background-color: #CCE5FF;
 }
 
 .container-droite {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     margin: 50px;
-    padding-bottom: 50px;
-    align-items: end;
+    padding-bottom: 75px;
 }
 
 .container-gauche {
     display: flex;
     flex-direction: row;
     margin: 50px;
-    padding-bottom: 50px;
-    align-items: start;
+    padding-bottom: 75px;
 }
 
-img {
-    width: 40%;
+.container-droite img {
+    width: 35%;
     border-radius: 15px;
+    border: 2px outset black;
+}
+
+.container-gauche img {
+    width: 35%;
+    border-radius: 15px;
+    border: 1px outset black;
+}
+
+.texte-encadre{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: space-evenly;
 }
 
 
+.titre-encadre {
+    align-self: center;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 25px;
+    background-color: gainsboro;
+}
+
+.txt {
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: gainsboro;
+    padding: 15px;
+    transition: 0.3s ease-in-out;
+    font-size: 18px;
+}
+
+.txt:hover {
+    transform: scale(1.04);
+}
 
 /* .titre-encadre-gauche {
     font-size: 25px;

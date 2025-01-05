@@ -359,7 +359,7 @@ body{
         top : 10px;
         left : 90px;
         transform: translateX(-50%); 
-        border: 1px solid #000000;
+        border: 1px outset #000000;
         background: transparent;
         text-decoration: none;
         overflow: hidden;
@@ -378,7 +378,7 @@ body{
     content :"";
     width: 400px;
     height: 400px;
-    background-color: #9932CC;
+    background-color: #00bbff;
     position: absolute;
     top: -50px;
     left : -100px;

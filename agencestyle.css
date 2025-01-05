@@ -137,15 +137,25 @@ body{
     gap: 15px;
 }
 
-.box-titre img {
+.box-titre img {                   /*images des agences*/
     height: 600px;
     width: 92%;
     border-radius: 20px;
-    box-shadow: 0 10px 10px black;
+    border: 1px outset black;
+    transition: 0.3s ease-in-out;
+}
+
+.box-titre img:hover {
+    transform: scale(1.02);            /*effet de zoom image*/
+    box-shadow: 1px 1px 4px #404040;
 }
 
 .nomville {
     font-size: 40px;
+    background: linear-gradient(to left, #1400c7, #00bbff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .container {
@@ -161,11 +171,24 @@ body{
     padding-right: 10px;
     display: flex;
     justify-content: center;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.infos:hover {
+    transform: scale(1.01);
 }
 
 .infos p {
+    padding: 5px;
     width: 80%;
     font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.infos p:first-child {
     border-top: 2px ridge white;
     border-radius: 8px;
 }
@@ -183,9 +206,21 @@ body{
 }
 
 iframe:hover {
-    transform: scale(1.1);
+    transform: scale(1.08);
     opacity: 1;
 }
+
+/* Classe initiale pour cacher les éléments 
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+} */
 
 
 /*Code footer*/

@@ -270,58 +270,123 @@ body{
 
     /*Carrousel*/
 
-
-.splide {
-    margin-top: 250px;
-}
-
-.splide__slide:nth-child(1) {
-    background-image: url('Carousel-Paris.jpg');
-    background-size: cover;
-    background-position: center center;
-}
-.splide__slide:nth-child(2) {
-    background-image: url('Carousel-Grenoble.jpg');
-    background-size: cover;
-    background-position: center center;
-}
-.splide__slide:nth-child(3) {
-    background-image: url('Carrousel-Aix-en-Provence.jpg');
-    background-size: cover;
-    background-position: center center;
-}
-.splide__slide:nth-child(4) {
-    background-image: url('Carrousel-Lyon.jpg');
-    background-size: cover;
-    background-position: center center;
-}
-.splide__slide:nth-child(5) {
-    background-image: url('Carrousel-Bordeaux.webp');
-    background-size: cover;
-    background-position: center center;
-}
-.splide__slide:nth-child(6) {
-    background-image: url('Carrousel-Toulouse.jpg');
-    background-size: cover;
-    background-position: center center;
-}
-
-
-.splide__slide.is-active {
+.Carrousel{
+    margin-top: 200px;
     height: 300px;
+    box-sizing: border-box;
+}
+            
+.entire-content {
+    margin: auto;
+    width: 500px;
+    perspective: 3000px;
+    position: relative;
+    padding-top: 80px;
+}
+    
+.content-carrousel {
+    width: 100%;
+    position: absolute;
+    float: right;
+    animation: rotar 15s infinite linear;
+    transform-style: preserve-3d;
+}
+    
+.content-carrousel:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+    
+.content-carrousel figure {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: absolute;
     border-radius: 10%;
-    transform: scale(1.1);
-    opacity: 1;
+    box-shadow: 0px 0px 20px 0px #000;
+}
+    
+.content-carrousel figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(730px); 
+} 
+    
+.content-carrousel figure:nth-child(2) {
+    transform: rotateY(40deg) translateZ(730px); 
+} 
+    
+.content-carrousel figure:nth-child(3) {
+    transform: rotateY(80deg) translateZ(730px); 
+} 
+    
+.content-carrousel figure:nth-child(4) {
+    transform: rotateY(120deg) translateZ(730px); 
+} 
+    
+.content-carrousel figure:nth-child(5) {
+    transform: rotateY(160deg) translateZ(730px); 
+} 
+
+.content-carrousel figure:nth-child(6) {
+    transform: rotateY(200deg) translateZ(730px); 
+} 
+    
+    
+.content-carrousel img {
+    transition: all 300ms;
+    width: 100%;
+    height: 100%;
+}
+    
+.content-carrousel img:hover {
+    transform: scale(1.2);
     transition: all 0.3s;
 }
+    
+@keyframes rotar {
+     from {
+        transform: rotateY(0deg);
+    } to {
+        transform: rotateY(300deg);
+    }
+}
 
-
-.splide__slide:not(.is-active) {
-    border-radius: 10%;
-    transform: scale(0.4);
-    height: 250px;
-    opacity: 0.5;
-    transition: all 0.1s;
+    /*boutons agence carrousel */
+    
+.button-agence {
+        position: absolute;
+        top : 10px;
+        left : 90px;
+        transform: translateX(-50%); 
+        border: 1px solid #000000;
+        background: transparent;
+        text-decoration: none;
+        overflow: hidden;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5);
+        transition: all 0.5s;
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        padding: 10px 30px;
+}
+    
+    
+.button-agence:after {
+    content :"";
+    width: 400px;
+    height: 400px;
+    background-color: #9932CC;
+    position: absolute;
+    top: -50px;
+    left : -100px;
+    z-index: -1;    /* fait apparaitre le texte devant le fond de couleur */
+    transition : all 0.5s /* temps de transition de la rotation du degrader de couleur */
+}
+    
+    
+.button-agence:hover {
+    box-shadow: 10px -10px 25px 0px rgba(143, 64, 248, .25), -10px 10px 25px 0px rgba(39, 200, 255, .25); /*l'ombre va changer lorsque nous passons le curseur de la souris dessus*/
 }
 
 

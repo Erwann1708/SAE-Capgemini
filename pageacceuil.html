@@ -96,41 +96,20 @@
             <a href="services.html#dev" class ="button" >En Savoir Plus</a>
           </article>
         </section>
-
-        <section class="splide">
-          <div class="splide__track">  <!-- contient tout les elements visuel du carrousel -->
-            <ul class="splide__list"> <!-- tout les elements de la liste -->
-              <li class="splide__slide"></li> <!-- Chaque slide individuel -->
-              <li class="splide__slide"></li>
-              <li class="splide__slide"></li>
-              <li class="splide__slide"></li>
-              <li class="splide__slide"></li>
-              <li class="splide__slide"></li>
-              <li class="splide__slide"></li>
-            </ul>
+        
+        <section class="Carrousel">
+          <div class="entire-content">
+            <div class="content-carrousel">
+              <figure class="carrousel-image"><img src="Carousel-Grenoble.jpg"/> <a href="Agence.html" class = "button-agence">Grenoble</a>></figure>
+              <figure class="carrousel-image"><img src="Carousel-Paris.jpg"/> <a href="Agence.html#paris" class = "button-agence" >Paris</a></figure>
+              <figure class="carrousel-image"><img src="Carrousel-Aix-en-Provence.jpg"/> <a href="Agence.html#aix-en-provence" class = "button-agence" >Aix-En-Provence</a></button></figure>
+              <figure class="carrousel-image"><img src="Carrousel-Bordeaux.webp"/> <a href="Agence.html#bordeaux" class = "button-agence" >Bordeux</a> </figure>
+              <figure class="carrousel-image"><img src="Carrousel-Lyon.jpg"/> <a href="Agence.html#lyon" class = "button-agence" >Lyon</a> </figure>
+              <figure class="carrousel-image"><img src="Carrousel-Toulouse.jpg"/> <a href="Agence.html#toulouse" class = "button-agence" >Toulouse</a> </figure>
+            </div>
           </div>
         </section>
-        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>       <!-- lien cdn qui permet de charger les fichiers de la bibliotheque slide -->
-        <script>
-          document.addEventListener('DOMContentLoaded', function() {
-            var splide = new Splide('.splide',{
-              start : '1',
-              perPage : 3,
-              focus : 'center',
-              interval : 2000,
-            });
-            splide.mount();
-            splide.on('move', function (newIndex) {
-              var totalSlides = splide.length;
-              if (newIndex === totalSlides - 1) {
-                setTimeout(function () {
-                  splide.go(0); // Revenir à la première slide après la dernière
-                }, 1000); // Attendre 1 seconde avant de revenir au début
-              }
-            });
-          });
-        
-        </script>
+
 
         <section class="Newsletter-container">
           <div class="Newsletter-image">

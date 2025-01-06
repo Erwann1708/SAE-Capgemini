@@ -164,16 +164,15 @@ body{
     padding-bottom: 75px;
 }
 
-.container-droite img {
+section img {
     width: 35%;
     border-radius: 15px;
     border: 2px outset black;
+    transition: 0.3s ease-in-out;
 }
 
-.container-gauche img {
-    width: 35%;
-    border-radius: 15px;
-    border: 1px outset black;
+section img:hover{
+    transform: scale(1.01);
 }
 
 .texte-encadre{

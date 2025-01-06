@@ -152,7 +152,7 @@ body{
 
 .nomville {
     font-size: 40px;
-    background: linear-gradient(to left, #1400c7, #00bbff);
+    background: linear-gradient(to left, #1400c7, #1fa9db);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

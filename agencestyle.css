@@ -5,6 +5,9 @@ html,body{
     height : 100%;
     overflow : visible;
 }
+
+
+
         /*Debut du code Du Menu */
 body{
     height:auto;   /*barre de scroll */
@@ -188,10 +191,6 @@ body{
     margin-bottom: 8px;
 }
 
-.infos p:first-child {
-    border-top: 2px ridge white;
-    border-radius: 8px;
-}
 
 .maps {
     padding: 20px;

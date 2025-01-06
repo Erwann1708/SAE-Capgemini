@@ -1,6 +1,16 @@
 * {
     margin: 0;
 }
+
+
+@font-face {
+    font-family: 'Burbank';
+    src: url('burbank-big-black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 html,body{
     height : 100%;
     overflow : visible;
@@ -143,11 +153,14 @@ body{
 #container-titre h1 {
     height: 80%;
     padding: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
     border: 2px solid black;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
     background-color: #CCE5FF;
+    font-family: "Burbank" , sans-serif;
+    font-size: 70px;
+    
 }
 
 .container-droite {
@@ -191,8 +204,9 @@ section img:hover{
     padding-right: 30px;
     border: 2px solid black;
     border-radius: 5px;
-    font-size: 25px;
+    font-size: 30px;
     background-color: gainsboro;
+    font-family: "Burbank" , sans-serif;
 }
 
 .txt {

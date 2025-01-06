@@ -191,6 +191,10 @@ body{
     margin-bottom: 8px;
 }
 
+.infos p:first-child {
+    border-top: 2px ridge white;
+    border-radius: 8px;
+}
 
 .maps {
     padding: 20px;

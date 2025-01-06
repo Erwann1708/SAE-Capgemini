@@ -2,6 +2,14 @@
     margin: 0;
 }
 
+
+@font-face {
+    font-family: 'Burbank';
+    src: url('burbank-big-black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
         /*Debut du code Du Menu */
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -122,6 +130,7 @@ body{
 
 
 .titre {
+    font-family: 'Burbank', sans-serif;;
     background-image: url(photo-acceuil.png) ;
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
     background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
@@ -250,10 +259,11 @@ body{
 
 .services-container h2{
     margin-top: 20px;
-    font-size : 30px;
+    font-size : 35px;
     font-weight: bold;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* ombre pour que le texte sois plus visible devant l'image */
+    font-family: "Burbank",sans-serif;
 }
 
     /* centrages des boutons */
@@ -348,7 +358,7 @@ body{
      from {
         transform: rotateY(0deg);
     } to {
-        transform: rotateY(300deg);
+        transform: rotateY(200deg);
     }
 }
 
@@ -359,7 +369,7 @@ body{
         top : 10px;
         left : 90px;
         transform: translateX(-50%); 
-        border: 1px outset #000000;
+        border: 1px solid #000000;
         background: transparent;
         text-decoration: none;
         overflow: hidden;
@@ -378,7 +388,7 @@ body{
     content :"";
     width: 400px;
     height: 400px;
-    background-color: #00bbff;
+    background-color: #9932CC;
     position: absolute;
     top: -50px;
     left : -100px;

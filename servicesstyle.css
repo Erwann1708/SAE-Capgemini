@@ -9,6 +9,7 @@ html,body{
 body{
     height:auto;   /*barre de scroll */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-block-size: 100dvb;
 }
 
 .container-menu{  /* container du menu */
@@ -131,61 +132,39 @@ body{
 @layer library, reset, base, demo;
 @import 'https://unpkg.com/open-props@2.0.0-beta.5' layer(library);
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap');
+/*Organisation des couches CSS : bibliothèque, réinitialisation, base, démonstration*/  /*Importation de la bibliothèque Open Props avec des variables CSS prédéfinies*/ /*Importation de la police*/ 
 
 @layer reset {
 
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
+  box-sizing: border-box; /* Inclut les bordures et les marges dans la taille totale des éléments */
 }
 
 :where(:not(dialog)) {
-  margin: 0;
+  margin: 0;   /* Réinitialise les marges par défaut sauf pour les dialogues */
 }
 }
 
 @layer base {
 html {
-  --nav-block-size: 74px;
   --brand-gradient: linear-gradient(227deg,
       #1400c7 0%,
-      #00bbff 100%);
+      #00bbff 100%); /* Définition d'un dégradé pour la marque */
 
-  @media (prefers-reduced-motion: no-preference) {
-    scroll-behavior: smooth;
-  }
 }
 
-body {
-  font-family: 'Inter', sans-serif;
-  min-block-size: 100dvb;
-}
 }
 
 @layer demo {
-.navbar {
-  min-block-size: var(--nav-block-size);
-  display: grid;
-  position: fixed;
-  inset-block-start: 0;
-  inset-inline: 0;
-  background-color: white;
-  z-index: var(--layer-3);
-  place-items: center end;
-  padding-block: var(--size-3);
-  padding-inline: var(--size-5);
 
-  @media (width >=600px) {
-    padding-inline: 6dvi;
-  }
-}
 
 .nav-cta-btn {
   font-size: var(--font-size-1);
   font-weight: var(--font-weight-7);
   inline-size: max-content;
-  white-space: nowrap;
+  white-space: nowrap; /* Empêche le texte de passer à la ligne */
   text-decoration: none;
   padding-block: var(--size-3);
   padding-inline: var(--size-7);
@@ -196,31 +175,10 @@ body {
 
   background: linear-gradient(white, white) padding-box,
     var(--brand-gradient) border-box;
-  border-radius: var(--radius-6);
+  border-radius: var(--radius-6);/* Coins arrondis */
   overflow: hidden;
 
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    inset: 0;
 
-    background: var(--brand-gradient);
-    mix-blend-mode: screen;
-  }
-
-  &:hover {
-    color: white;
-
-    &::before {
-      background: var(--brand-gradient) padding-box,
-        var(--brand-gradient) border-box;
-      background-repeat: no-repeat;
-      background-size: contain;
-      mix-blend-mode: normal;
-      z-index: -1;
-    }
-  }
 }
 
 .section {
@@ -245,17 +203,14 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media (width < 960px) {
-    padding-block-start: calc(var(--nav-block-size) + var(--size-7));
-    padding-block-end: var(--size-7);
-  }
+
 }
 
 .video {
   display: block;
   inline-size: 100%;
   block-size: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Adapte la vidéo au conteneur */
   position: relative;
   z-index: -1;
 }
@@ -263,9 +218,7 @@ body {
 .content-wrapper {
   display: grid;
 
-  @media (width < 960px) {
-    gap: var(--size-7);
-  }
+
 }
 
 .meta {
@@ -286,17 +239,15 @@ body {
     place-items: center end;
   }
 
-  @media (width < 960px) {
-    gap: var(--size-5);
-  }
+
 }
 
 .mobile-visual {
   inline-size: 100%;
-  aspect-ratio: var(--ratio-square);
+  aspect-ratio: var(--ratio-square);/* Maintient un ratio carré */
 
   @media (width >=960px) {
-    display: none;
+    display: none; /* Masque les visuels mobiles sur les grands écrans */
   }
 }
 
@@ -306,20 +257,14 @@ body {
   max-inline-size: var(--size-content-1);
   text-wrap: pretty;
 
-  @media (width < 960px) {
-    font-size: var(--font-size-6);
-  }
 }
 
 .desc {
   font-size: var(--font-size-4);
-  line-height: 1.5;
+  line-height: 1.5; /* Espacement entre les lignes */
   max-inline-size: 40ch;
   text-wrap: pretty;
 
-  @media (width < 960px) {
-    font-size: var(--font-size-3);
-  }
 }
 
 .visual {
@@ -344,7 +289,7 @@ body {
   filter: hue-rotate(210deg);
 }
 
-.card-wrapper {
+.icone-wrapper {
   container-type: size;
   display: grid;
   place-items: center;
@@ -355,35 +300,35 @@ body {
   }
 }
 
-.card {
+.icone {
   aspect-ratio: var(--ratio-square);
   inline-size: 70cqi;
   border-radius: var(--radius-3);
-  scale: 0.4;
+  scale: 0.4;/* Réduit l'échelle */
 }
 
-.card-img {
+.icone-img {
   display: block;
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
 }
 
-.card-1 {
+.icone-1 {
   scale: 1;
 }
 
-.card-2 {
+.icone-2 {
   translate: -35cqi 30cqb;
   opacity: 0.3;
 }
 
-.card-3 {
+.icone-3 {
   translate: 0cqi 50cqb;
   opacity: 0.5;
 }
 
-.card-4 {
+.icone-4 {
   translate: 45cqi 40cqb;
   opacity: 0.5;
 }
@@ -446,27 +391,27 @@ body {
   view-timeline-name: --content-4;
 }
 
-.card {
+.icone {
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
 
-.card-1 {
+.icone-1 {
   animation-timeline: --content-1;
   animation-name: slide-up-first-card;
 }
 
-.card-2 {
+.icone-2 {
   animation-timeline: --content-2;
   animation-name: slide-up-card;
 }
 
-.card-3 {
+.icone-3 {
   animation-timeline: --content-3;
   animation-name: slide-up-card;
 }
 
-.card-4 {
+.icone-4 {
   animation-timeline: --content-4;
   animation-name: slide-up-card;
 }
@@ -478,7 +423,7 @@ body {
   animation-timing-function: step-end;
   animation-fill-mode: forwards;
 }
-
+/*Définition des animations*/
 @keyframes update-hue {
   0% {
     filter: hue-rotate(210deg);

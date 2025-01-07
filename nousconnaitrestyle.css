@@ -151,16 +151,11 @@ body{
 }
 
 #container-titre h1 {
+    margin-top: 50px;
     height: 80%;
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border: 2px solid black;
     border-radius: 20px;
-    background-color: #CCE5FF;
     font-family: "Burbank" , sans-serif;
-    font-size: 70px;
-    
+    font-size: 70px; 
 }
 
 .container-droite {

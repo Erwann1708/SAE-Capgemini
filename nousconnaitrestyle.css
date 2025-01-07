@@ -173,7 +173,7 @@ body{
 }
 
 section img {
-    width: 35%;
+    width: 40%;
     border-radius: 15px;
     border: 2px outset black;
     transition: 0.3s ease-in-out;
@@ -188,17 +188,15 @@ section img:hover{
     flex-direction: column;
     padding-left: 10%;
     padding-right: 10%;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 
 .titre-encadre {
     align-self: center;
     padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
     border: 2px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 30px;
     background-color: gainsboro;
 }
@@ -210,6 +208,7 @@ section img:hover{
     padding: 15px;
     transition: 0.3s ease-in-out;
     font-size: 18px;
+    margin: 20px;
 }
 
 .txt:hover {

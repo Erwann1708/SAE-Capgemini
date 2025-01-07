@@ -124,6 +124,9 @@ body{
 }
 /* fin code menu */
 
+article {
+  height: 1500px;
+}
 
 article img {
   position: relative;

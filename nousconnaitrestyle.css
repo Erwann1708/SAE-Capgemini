@@ -201,7 +201,6 @@ section img:hover{
     border-radius: 5px;
     font-size: 30px;
     background-color: gainsboro;
-    font-family: "Burbank" , sans-serif;
 }
 
 .txt {
@@ -216,39 +215,6 @@ section img:hover{
 .txt:hover {
     transform: scale(1.04);
 }
-
-/* .titre-encadre-gauche {
-    font-size: 25px;
-    justify-content: flex-start;
-    padding-left: 120px;
-}
-
-.titre-encadre-droite {
-    font-size: 25px;
-    justify-content: end;
-    padding-right: 120px;
-}
-
-.texte-encadre-droite {
-    display: flex;
-    justify-content: end;
-}
-
-img {
-    width: 40%;
-    border-radius: 15px;
-}
-
-.image-gauche {
-    justify-content: end;
-}
-
-.p {
-    width: 40%;
-}/*
-
-
-
 
 
 

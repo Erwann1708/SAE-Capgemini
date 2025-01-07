@@ -141,6 +141,10 @@ body{
     padding-top: 200px;
     padding-left: 150px;
     font-weight: bold;
+    background: linear-gradient(to left, #1400c7, #1fa9db);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
         
 .titre p {

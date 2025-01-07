@@ -7,7 +7,7 @@ html,body{
 }
         /*Debut du code Du Menu */
 body{
-    height: auto;;   /*barre de scroll */
+    height: auto;   /*barre de scroll */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url("particle-lines-futuristic-gradient-background.jpg");
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
@@ -124,9 +124,6 @@ body{
 }
 /* fin code menu */
 
-article {
-  height: 1500px;
-}
 
 article img {
   position: relative;

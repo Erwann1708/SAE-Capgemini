@@ -201,7 +201,9 @@ body{
 @import 'https://unpkg.com/open-props@2.0.0-beta.5' layer(library);
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap');
 /*Organisation des couches CSS : bibliothèque, réinitialisation, base, démonstration*/  /*Importation de la bibliothèque Open Props avec des variables CSS prédéfinies*/ /*Importation de la police*/ 
-
+h2{
+  font-size: 50px;
+}
 @layer reset {
 
 *,

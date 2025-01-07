@@ -18,7 +18,6 @@ body{
     background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
     background-position: center; /* Centre l'image */
     background-attachment: fixed; /* Fixe l'image lors du défilement */  /*fond degradé !!!!! à enlever si ça vous plait pas !!!!!!*/
-
 }
 
 .container-menu{  /* container du menu */
